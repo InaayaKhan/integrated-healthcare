@@ -1,0 +1,7 @@
+# Mark the admin panel's third-party theme and libraries as vendored,
+# so GitHub's language bar reflects the project's own code (Java, PHP).
+admin-panel/admin/assets/** linguist-vendored
+admin-panel/admin/css/** linguist-vendored
+admin-panel/admin/js/plugins/** linguist-vendored
+admin-panel/admin/graph/** linguist-vendored
+admin-panel/admin/gulp-tasks/** linguist-vendored
