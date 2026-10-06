@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="16dp"
+    tools:context=".UpdateProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mainpatch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/txtProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_single"
+            android:hint="Name"
+            android:inputType="text"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/txtProfileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_single"
+            android:hint="Mobile Number"
+            android:inputType="none"
+            android:enabled="false"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Specialized In"
+            android:layout_marginTop="20dp"/>
+
+        <Spinner
+            android:id="@+id/spnProfileNumberSpecialized"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_single"
+            android:hint="Specialized In"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Experience in Years"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/txtProfileExp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_single"
+            android:hint="Experience in Years"
+            android:inputType="number"
+            android:maxLength="2"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/txtProfileAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_single"
+            android:hint="Address"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="3"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pincode"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/txtProfilePincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_single"
+            android:hint="Pincode"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/txtProfileCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_single"
+            android:hint="City"
+            android:inputType="text"
+            android:maxLength="20"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnUpdateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Update Profile"
+            android:onClick="updateProfile"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

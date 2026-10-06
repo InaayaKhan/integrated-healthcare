@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="16dp"
+    tools:context=".SearchResult">
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtSearchResultName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:text="Name: " />
+
+        <TextView
+            android:id="@+id/txtSearchResultSpecialized"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Specialized In: "
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/txtSearchResultCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City: "
+            android:visibility="gone"
+            android:layout_marginTop="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#c0c0c0"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainpatch"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:layout_below="@id/llTop">
+
+            <ListView
+                android:id="@+id/listViewSearchResult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:dividerHeight="2dp"
+                android:divider="#555555"></ListView>
+
+        </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="16dp"
+    tools:context=".SetGoogleMeet">
+
+    <LinearLayout
+        android:id="@+id/mainpatch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Google Meet Link" />
+
+        <EditText
+            android:id="@+id/txtLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_single"
+            android:hint="Google Meet Link"
+            android:inputType="text"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnUpdateGoogleMeet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Save Link"
+            android:onClick="saveLink"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

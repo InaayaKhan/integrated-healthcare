@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="16dp"
+    tools:context=".SearchDoctor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/mainpatch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/txtSearchName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_single"
+                android:hint="Doctor Name"
+                android:visibility="gone"
+                android:inputType="text"
+                android:padding="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Specialized In"
+                android:layout_marginTop="20dp"/>
+
+            <Spinner
+                android:id="@+id/spnSearchSpecialized"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_single"
+                android:hint="Specialized In"
+                android:padding="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/txtSearchCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_single"
+                android:hint="City"
+                android:visibility="gone"
+                android:inputType="text"
+                android:maxLength="20"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Search"
+                android:onClick="searchDoctor"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

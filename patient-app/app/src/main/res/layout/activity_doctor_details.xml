@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="16dp"
+    tools:context=".DoctorDetails">
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/lblDoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:textFontWeight="700"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/lblDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#777777"
+            android:typeface="sans"
+            android:textFontWeight="100"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lblMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textFontWeight="100"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/lblAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Address"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textFontWeight="100" />
+
+
+        <Button
+            android:id="@+id/btnGoogleMeet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorAccent"
+            android:text="Request Google Meet"
+            android:onClick="funGoogleMeet"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"/>
+
+        <!--<Button
+            android:id="@+id/btnStartChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/teal_200"
+            android:text="Start Chat"
+            android:onClick="funStartChat"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"/>-->
+    </LinearLayout>
+</RelativeLayout>

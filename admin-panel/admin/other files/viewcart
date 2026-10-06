@@ -1,0 +1,23 @@
+<?php 
+include("db_connect.php");
+	$db=new DB_connect();
+	$con=$db->connect();
+
+	// array for JSON response
+	$response = array();
+	
+	
+	// check for required fields
+		$query="SELECT * FROM cart ";		
+		$result=mysqli_query($con,$query);
+		
+		while($row=mysqli_fetch_array($result)){
+	
+		    array_push($response,array('UserID'=>$row["UserID"],'Product_ID'=>$row["Product_ID"],
+			'Quantity'=>$row["Quantity"],'ShippingCharge'=>$row["ShippingCharge"],
+			'Totaltax'=>$row["Totaltax"],'Totalamount'=>$row["Totalamount"],'OrderStatus'=>$row["OrderStatus"]));
+		}
+		echo json_encode(array('response'=>$response));
+
+
+?>
